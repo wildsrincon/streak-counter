@@ -1,4 +1,11 @@
 {
+  "name": "@wildsrincon/streak-counter",
+  "version": "0.0.1",
+  "main": "./dist/index.cjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wildsrincon/streak-counter"
+  },
   "devDependencies": {
     "@types/jest": "^29.4.0",
     "@types/jsdom": "^21.1.0",
@@ -7,7 +14,23 @@
     "ts-jest": "^29.0.5",
     "typescript": "^4.9.5"
   },
+  "author": "Wilder Rincon <wildsrincon.developer@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "source": "src/index.ts",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
   "scripts": {
-    "test": "jest"
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+  },
+  "dependencies": {
+    "microbundle": "^0.15.1"
   }
 }
