@@ -16,7 +16,6 @@
   },
   "author": "Wilder Rincon <wildsrincon.developer@gmail.com>",
   "license": "MIT",
-  "type": "module",
   "types": "./dist/index.d.ts",
   "source": "src/index.ts",
   "exports": {
