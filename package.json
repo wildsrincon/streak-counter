@@ -28,7 +28,7 @@
   "scripts": {
     "build": "microbundle",
     "dev": "microbundle watch",
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest"
   },
   "dependencies": {
     "microbundle": "^0.15.1"

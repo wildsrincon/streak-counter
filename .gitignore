@@ -7,7 +7,6 @@ yarn-error.log*
 lerna-debug.log*
 **tests**
 jest.config.cjs
-.github
 .vscode
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
